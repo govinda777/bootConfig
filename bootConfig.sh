@@ -47,3 +47,8 @@ sudo apt install git
  newgrp docker
 sudo snap install docker
  docker pull hello-world
+
+# Como configurar o e-mail
+
+https://support.google.com/mail/answer/7104828?hl=pt-BR&visit_id=637945731336915975-2991441972&rd=1
+
