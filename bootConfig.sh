@@ -52,3 +52,28 @@ sudo snap install docker
 
 https://support.google.com/mail/answer/7104828?hl=pt-BR&visit_id=637945731336915975-2991441972&rd=1
 
+# chromium install
+
+sudo snap install chromium
+
+# Angular cli
+
+npm install -g @angular/cli
+
+# Install Chrome
+
+uname -m
+sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
+wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+sudo apt-get update
+sudo apt-get install google-chrome-stable
+sudo apt-get remove google-chrome-stable
+
+
+# Install node
+
+https://stackoverflow.com/questions/8191459/how-do-i-update-node-js
+
+sudo npm cache clean -f
+sudo npm install -g n
+sudo n stable
