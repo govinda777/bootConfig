@@ -39,3 +39,11 @@ sudo mkdir -p /etc/debsig/policies/AC2D62742012EA22/
 # Git install
 
 sudo apt install git
+
+# Docker install
+
+ sudo addgroup --system docker
+ sudo adduser $USER docker
+ newgrp docker
+sudo snap install docker
+ docker pull hello-world
