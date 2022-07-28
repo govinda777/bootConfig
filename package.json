@@ -1,0 +1,19 @@
+{
+  "name": "bootconfig",
+  "version": "1.0.0",
+  "description": "Comandos para a configuração do seu work space",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "boot",
+    "start",
+    "onboard",
+    "onboarding",
+    "onboardly",
+    "onboardBle"
+  ],
+  "author": "",
+  "license": "MIT"
+}
