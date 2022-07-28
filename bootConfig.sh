@@ -77,3 +77,12 @@ https://stackoverflow.com/questions/8191459/how-do-i-update-node-js
 sudo npm cache clean -f
 sudo npm install -g n
 sudo n stable
+
+# Install Diagram
+
+https://computingforgeeks.com/install-draw-io-desktop-application-on-ubuntu-debian-fedora/#:~:text=For%20Debian%20and%20Ubuntu%20users,deb%20build%20of%20draw.io.&text=Then%20install%20it%20with%20the%20dpkg%20command.
+
+sudo apt update
+sudo apt -y install wget curl
+curl -s https://api.github.com/repos/jgraph/drawio-desktop/releases/latest | grep browser_download_url | grep '\.deb' | cut -d '"' -f 4 | wget -i -
+
