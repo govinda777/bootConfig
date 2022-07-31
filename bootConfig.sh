@@ -86,3 +86,6 @@ sudo apt update
 sudo apt -y install wget curl
 curl -s https://api.github.com/repos/jgraph/drawio-desktop/releases/latest | grep browser_download_url | grep '\.deb' | cut -d '"' -f 4 | wget -i -
 
+# Spootfit
+
+sudo snap install spotify
