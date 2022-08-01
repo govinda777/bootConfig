@@ -77,3 +77,7 @@ https://stackoverflow.com/questions/8191459/how-do-i-update-node-js
 sudo npm cache clean -f
 sudo npm install -g n
 sudo n stable
+
+# Install Terraform
+
+sudo snap install terraform --classic
