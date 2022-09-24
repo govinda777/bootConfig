@@ -73,11 +73,10 @@ sudo npm install -g @angular/cli
 ## Install Chrome
 
 uname -m
-sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
+sudo sh -c 'echo "deb [arch=x86_64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
 wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 sudo apt-get update
 sudo apt-get install google-chrome-stable
-sudo apt-get remove google-chrome-stable
 
 ## Install Diagram
 
@@ -87,13 +86,12 @@ sudo apt update
 sudo apt -y install wget curl
 curl -s https://api.github.com/repos/jgraph/drawio-desktop/releases/latest | grep browser_download_url | grep '\.deb' | cut -d '"' -f 4 | wget -i -
 
+sudo apt -f install ./drawio-amd64-*.deb
+
 ## Spootfit
 
 sudo snap install spotify
 
-## Instalação terraform
-
-sudo snap install terraform --classic
 
 ## Java
 
@@ -103,6 +101,10 @@ sudo apt install default-jdk
 
 sudo apt install default-jre
 
-## ngrok
+## ngrok DNS
 
 sudo snap install ngrok
+
+## Instalação terraform
+
+sudo snap install terraform --classic
