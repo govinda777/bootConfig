@@ -1,23 +1,23 @@
 # bootConfig
 Repositório com os comandos para a instalação do seu Workspace
 
-# Update SO
+## Update SO
 
 sudo apt-get update
 
-# Git 
+## Git 
 
 sudo apt install git
 
-# Instalação do Visual Studio
+## Instalação do Visual Studio
 
 sudo snap install code --classic
 
-# Instalação do npm
+## Instalação do npm
 
 sudo apt install nodejs npm
 
-# Install node
+## Install node
 
 https://stackoverflow.com/questions/8191459/how-do-i-update-node-js
 
@@ -25,11 +25,11 @@ sudo npm cache clean -f
 sudo npm install -g n
 sudo n stable
 
-# CURL 
+## CURL 
 
 sudo apt install curl
 
-# Instalação do 1 Password
+## Instalação do 1 Password
 
 curl -sS https://downloads.1password.com/linux/keys/1password.asc | sudo gpg --dearmor --output /usr/share/keyrings/1password-archive-keyring.gpg
 
@@ -50,7 +50,7 @@ sudo mkdir -p /etc/debsig/policies/AC2D62742012EA22/
 # 
 #  pass : <you.pass>
 
-# Docker install
+## Docker install
 
  sudo addgroup --system docker
  sudo adduser $USER docker
@@ -58,19 +58,19 @@ sudo mkdir -p /etc/debsig/policies/AC2D62742012EA22/
 sudo snap install docker
  docker pull hello-world
 
-# Como configurar o e-mail
+## Como configurar o e-mail
 
 https://support.google.com/mail/answer/7104828?hl=pt-BR&visit_id=637945731336915975-2991441972&rd=1
 
-# chromium install
+## chromium install
 
 sudo snap install chromium
 
-# Angular cli
+## Angular cli
 
 sudo npm install -g @angular/cli
 
-# Install Chrome
+## Install Chrome
 
 uname -m
 sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
@@ -79,7 +79,7 @@ sudo apt-get update
 sudo apt-get install google-chrome-stable
 sudo apt-get remove google-chrome-stable
 
-# Install Diagram
+## Install Diagram
 
 https://computingforgeeks.com/install-draw-io-desktop-application-on-ubuntu-debian-fedora/#:~:text=For%20Debian%20and%20Ubuntu%20users,deb%20build%20of%20draw.io.&text=Then%20install%20it%20with%20the%20dpkg%20command.
 
@@ -87,10 +87,22 @@ sudo apt update
 sudo apt -y install wget curl
 curl -s https://api.github.com/repos/jgraph/drawio-desktop/releases/latest | grep browser_download_url | grep '\.deb' | cut -d '"' -f 4 | wget -i -
 
-# Spootfit
+## Spootfit
 
 sudo snap install spotify
 
-# Instalação terraform
+## Instalação terraform
 
 sudo snap install terraform --classic
+
+## Java
+
+sudo snap install openjdk
+
+sudo apt install default-jdk
+
+sudo apt install default-jre
+
+## ngrok
+
+sudo snap install ngrok
