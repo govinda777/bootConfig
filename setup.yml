@@ -1,0 +1,20 @@
+---
+- hosts: localhost
+  become: yes
+  tasks:
+
+  - name: Atualizar o cache do APT
+    apt:
+      update_cache: yes
+
+  - name: Instalar pacotes
+    apt:
+      name: "{{ packages }}"
+    vars:
+      packages:
+      - git
+      - docker
+      - docker-compose
+      - nodejs
+      - npm
+...

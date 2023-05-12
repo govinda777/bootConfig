@@ -1,6 +1,9 @@
 # bootConfig
 Repositório com os comandos para a instalação do seu Workspace
 
+chmod +x install.sh
+sudo ./install.sh
+
 ## Update SO
 
 sudo apt-get update
