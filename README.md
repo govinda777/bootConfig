@@ -1,8 +1,12 @@
 # bootConfig
 Repositório com os comandos para a instalação do seu Workspace
 
-chmod +x install.sh
-sudo ./install.sh
+
+## 1 - instale o ansible
+
+## 2 - Execute o comando 
+
+ansible-playbook setup.yml
 
 ## Update SO
 
